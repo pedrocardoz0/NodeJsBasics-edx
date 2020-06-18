@@ -1,20 +1,10 @@
-var sayHelloEnglish = function () {
-  return "Hello";
-};
-
-var sayHelloSwedish = function () {
-  return "Hej";
-};
-
-var sayHelloTatar = function () {
-  return "Isanme";
-};
+var greetings = require("./greetings");
 
 console.log(
   "Swedish " +
-    sayHelloInSwedish() +
+    greetings.sayHelloSwedish() +
     " & English " +
-    sayHelloInEnglish() +
+    greetings.sayHelloEnglish() +
     " & Tatar " +
-    sayHelloInTatar()
+    greetings.sayHelloTatar()
 );
